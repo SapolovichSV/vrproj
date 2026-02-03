@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< Updated upstream
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa6e0cdf-7530-4ef1-919e-0bb4ea5365ee" name="Changes" comment="" />
+=======
+  <component name="ChangeListManager">
+    <list default="true" id="7748336b-80e2-426a-bd5b-0e40c1c9c0ae" name="Changes" comment="" />
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< Updated upstream
   <component name="DpaMonitoringSettings">
     <option name="firstShow" value="false" />
   </component>
@@ -28,12 +34,22 @@
   "associatedIndex": 4
 }]]></component>
   <component name="ProjectId" id="35kJsozOtXHuwEu94HTtUXj9rJ9" />
+=======
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="35hok3eINsjuUtOMSxLsnBEjmRF" />
+>>>>>>> Stashed changes
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+<<<<<<< Updated upstream
     "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -74,13 +90,35 @@
       <option name="presentableId" value="Default" />
       <updated>1763648363877</updated>
       <workItem from="1763648417080" duration="4591000" />
+=======
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "master",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7748336b-80e2-426a-bd5b-0e40c1c9c0ae" name="Changes" comment="" />
+      <created>1763571805602</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1763571805602</updated>
+      <workItem from="1763571807638" duration="1302000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+<<<<<<< Updated upstream
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+=======
+>>>>>>> Stashed changes
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityProjectDiscoverer">
     <option name="unityProjectFolder" value="true" />
@@ -106,8 +144,11 @@
       </breakpoints>
     </breakpoint-manager>
   </component>
+<<<<<<< Updated upstream
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
   </component>
+=======
+>>>>>>> Stashed changes
 </project>
