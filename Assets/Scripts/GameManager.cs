@@ -51,7 +51,12 @@ public class GameManager : MonoBehaviour
             Transform spawnPoint = spawnPoints[spawnPointIndex];
 
             // Create a new zombie
-            Instantiate(zombiePrefab, spawnPoint.position, spawnPoint.rotation);
+            var zombie = Instantiate(zombiePrefab, spawnPoint.position, spawnPoint.rotation);
+            var dmg = zombie.GetComponentInChildren<DamageableDummy>();
+            if (dmg == null) zombie.AddComponent<DamageableDummy>();
+            var ai = zombie.GetComponent<ZombieChasePlayer>();
+            if (ai == null) ai = zombie.AddComponent<ZombieChasePlayer>();
+            if (ai.target == null && Camera.main != null) ai.target = Camera.main.transform;
         }
     }
 

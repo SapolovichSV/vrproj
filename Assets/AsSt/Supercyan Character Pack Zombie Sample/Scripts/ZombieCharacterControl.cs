@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 public class ZombieCharacterControl : MonoBehaviour
 {
@@ -55,6 +55,9 @@ public class ZombieCharacterControl : MonoBehaviour
 
     private void TankUpdate()
     {
+#if !ENABLE_LEGACY_INPUT_MANAGER
+        return;
+#else
         float v = Input.GetAxis("Vertical");
         float h = Input.GetAxis("Horizontal");
 
@@ -65,10 +68,14 @@ public class ZombieCharacterControl : MonoBehaviour
         transform.Rotate(0, m_currentH * m_turnSpeed * Time.deltaTime, 0);
 
         m_animator.SetFloat("MoveSpeed", m_currentV);
+#endif
     }
 
     private void DirectUpdate()
     {
+#if !ENABLE_LEGACY_INPUT_MANAGER
+        return;
+#else
         float v = Input.GetAxis("Vertical");
         float h = Input.GetAxis("Horizontal");
 
@@ -92,5 +99,6 @@ public class ZombieCharacterControl : MonoBehaviour
 
             m_animator.SetFloat("MoveSpeed", direction.magnitude);
         }
+#endif
     }
 }

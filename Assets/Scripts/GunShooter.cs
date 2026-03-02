@@ -15,7 +15,9 @@ namespace VR.Weapons
         public float maxDistance = 100f;
         [Tooltip("Seconds between shots")] public float fireInterval = 0.15f;
         public float damage = 10f;
+#pragma warning disable CS0618
         public XRBaseController controller; // optional for haptics
+#pragma warning restore CS0618
         public AudioSource audioSource; // optional
         public AudioClip fireClip; // optional
         public ParticleSystem muzzleFlash; // optional
@@ -45,6 +47,7 @@ namespace VR.Weapons
 #if ENABLE_INPUT_SYSTEM
             if (triggerAction.action != null)
             {
+                triggerAction.action.Enable();
                 triggerAction.action.started += OnTriggerStarted;
                 triggerAction.action.canceled += OnTriggerCanceled;
             }
@@ -58,6 +61,7 @@ namespace VR.Weapons
             {
                 triggerAction.action.started -= OnTriggerStarted;
                 triggerAction.action.canceled -= OnTriggerCanceled;
+                triggerAction.action.Disable();
             }
 #endif
         }
@@ -85,7 +89,7 @@ namespace VR.Weapons
         {
 #if ENABLE_INPUT_SYSTEM
             if (automatic && _triggerHeld) TryFire();
-#else
+#elif ENABLE_LEGACY_INPUT_MANAGER
             if (automatic ? Input.GetMouseButton(0) : Input.GetMouseButtonDown(0)) TryFire();
 #endif
         }
@@ -166,7 +170,9 @@ namespace VR.Weapons
             if (audioSource && fireClip) audioSource.PlayOneShot(fireClip);
             if (controller != null)
             {
+#pragma warning disable CS0618
                 controller.SendHapticImpulse(0.6f, 0.05f);
+#pragma warning restore CS0618
             }
         }
     }
